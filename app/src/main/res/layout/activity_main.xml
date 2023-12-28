@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   xmlns是命名空间-->
+<!--match_parent-->
+<!--wrap_content是包裹内容大小-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/showText"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/common_text_size"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="@dimen/image_button_size"
+            android:layout_height="@dimen/image_button_size"
+            android:background="@drawable/add"
+            android:textSize="@dimen/common_text_size"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/take_photo"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@drawable/camera"
+            android:textSize="@dimen/common_text_size"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/buttonDetect"
+            android:layout_width="@dimen/image_button_size"
+            android:layout_height="@dimen/image_button_size"
+            android:background="@drawable/detect_main"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/common_text_size"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="@dimen/image_button_size"
+            android:layout_height="@dimen/image_button_size"
+            android:background="@drawable/save"
+            android:textSize="@dimen/common_text_size"/>
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonScan"-->
+<!--            android:layout_width="@dimen/image_button_size"-->
+<!--            android:layout_height="@dimen/image_button_size"-->
+<!--            android:background="@drawable/photo"-->
+<!--            android:textSize="@dimen/common_text_size"-->
+<!--            android:layout_marginLeft="5dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/buttonUerInfo"-->
+<!--            android:layout_width="@dimen/image_button_size"-->
+<!--            android:layout_height="@dimen/image_button_size"-->
+<!--            android:background="@drawable/user"-->
+<!--            android:textSize="@dimen/common_text_size" />-->
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/RG_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/detect_sticks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="识别烧烤签"
+                android:checked="true"
+                android:gravity="center"/>
+            <RadioButton
+                android:id="@+id/detect_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="识别人"
+                android:checked="false"/>
+            <RadioButton
+                android:id="@+id/detect_sheep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="识别羊"
+                android:checked="false"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/item1"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/exit"
+            android:backgroundTint="#03A9F4"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/item2"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/photo"
+            android:backgroundTint="#03A9F4"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/item3"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/user"
+            android:backgroundTint="#03A9F4"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/star" />
+    </FrameLayout>
+
+</LinearLayout>

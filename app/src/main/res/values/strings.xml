@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Yolov8Detect</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--    Login-->
+    <string name="Login_pws">密码登录</string>
+    <string name="Login_mes">验证码登录</string>
+    <string name="id">账 号：</string>
+    <string name="pws">密 码：</string>
+    <string name="hint_id">输入账号</string>
+    <string name="hint_text">输入密码</string>
+
+
+    <!--    refind-->
+    <string name="re_find_id">账号：</string>
+    <string name="re_find_new_pws">密码：</string>
+    <string name="re_find_new_pws2">密码：</string>
+    <string name="re_find_btn">确认重置</string>
+    <string name="re_find_back">返回</string>
+    <string name="re_find_id_hint">输入ID</string>
+    <string name="re_find_pws_hint1">输入新密码</string>
+    <string name="re_find_pws_hint2">再次输入新密码</string>
+    <string name="toast_phone_error">手机格式错误</string>
+
+    <!--    database-->
+    <string name="db_create">创建数据库</string>
+    <string name="db_delete">删除数据库</string>
+
+    <!--    database_helper-->
+    <string name="db_helper_id">账号：</string>
+    <string name="db_helper_pws">密码：</string>
+    <string name="db_helper_sex">性别：</string>
+    <string name="db_helper_height">身高：</string>
+    <string name="db_helper_btn_register">注册</string>
+    <string name="db_helper_btn_delete">删除</string>
+    <string name="db_helper_btn_modify">修改</string>
+    <string name="db_helper_btn_query">查询</string>
+
+    <!--    saveImage-->
+    <string name="saveImage_save_btn">保存图片</string>
+    <string name="saveImage_load_btn">读取图片</string>
+
+    <!--    JumpToAlbum-->
+    <string name="jumpToAlbum">选择图片</string>
+    <string name="jump_to_album_choice">查看图片</string>
+    <string name="jump_to_album_save">保存图片</string>
+
+    <!--    MediaStore_img-->
+    <string name="MS_load_img_btn">获取图片</string>
+
+<!--    UserInfo-->
+    <string name="UserInfo_phone">手 机：</string>
+    <string name="UserInfo_modify">修改</string>
+    <string name="UserInfo_title">个人信息</string>
+    <string name="UserInfo_edit">编辑</string>
+    <string name="UserInfo_out">退出</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/re_find_id"
+            android:textSize="@dimen/common_text_size"/>
+
+        <EditText
+            android:id="@+id/re_find_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:inputType="number"
+            android:background="@drawable/edittext_norm"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/re_find_new_pws"
+            android:textSize="@dimen/common_text_size"/>
+
+        <EditText
+            android:id="@+id/re_find_pws1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:background="@drawable/edittext_norm"
+            android:inputType="numberPassword"
+            android:hint="@string/re_find_pws_hint1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/re_find_new_pws2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/re_find_pws2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_norm"
+            android:inputType="numberPassword"
+            android:hint="@string/re_find_pws_hint2"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/re_find_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_find_btn"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/re_find_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_find_back"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center"/>
+
+</LinearLayout>

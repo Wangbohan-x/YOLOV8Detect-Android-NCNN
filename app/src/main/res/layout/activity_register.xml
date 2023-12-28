@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/re_find_id"
+            android:textSize="@dimen/common_text_size"/>
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:inputType="text"
+            android:background="@drawable/edittext_norm"
+            android:hint="输入昵称"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机："
+            android:textSize="@dimen/common_text_size"/>
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:inputType="number"
+            android:background="@drawable/edittext_norm"
+            android:hint="输入手机号"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="@dimen/common_text_size" />
+
+        <EditText
+            android:id="@+id/register_pws1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_norm"
+            android:hint="输入密码"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="@dimen/common_text_size" />
+
+        <EditText
+            android:id="@+id/register_pws2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_norm"
+            android:hint="确认密码"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/register_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/re_find_back"
+        android:textSize="@dimen/common_text_size"
+        android:gravity="center"/>
+
+</LinearLayout>
